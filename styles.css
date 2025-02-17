@@ -23,7 +23,7 @@ body {
   /* Header Styling */
   .header {
     height: 70vh;
-    background: linear-gradient(135deg, #4e9cf0, #73b4fa); /* Blue gradient */
+    background: linear-gradient(135deg, #2359ee, #070bf1); /* Blue gradient */
     color: white;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ body {
     font-size: 3em;
   }
   .header-screen {
-    background: linear-gradient(135deg, #61a1f5, #77abf8); /* Blue gradient */
+    background: linear-gradient(400deg, #2359ee, #070bf1); /* Blue gradient */
   }
   
   .header h1 span {
@@ -49,10 +49,20 @@ body {
   }
   
   .btn-outline-light:hover {
-    background-color: #9aff86; /* Highlight on hover */
+    background-color: #8fff80; /* Highlight on hover */
     color: rgb(73, 171, 236);
   }
-  
+
+  /* Social Icons */
+  .social-icons a {
+    color: white; /* White icons for better visibility */
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #41f729;
+    transform: scale(1.2);
+  }
   /* Section Styling */
   h2 {
     font-size: 2.5em;
