@@ -22,8 +22,8 @@ body {
   
   /* Header Styling */
   .header {
-    height: 100vh;
-    background: linear-gradient(135deg, #0056b3, #007bff); /* Blue gradient */
+    height: 70vh;
+    background: linear-gradient(135deg, #4e9cf0, #73b4fa); /* Blue gradient */
     color: white;
     display: flex;
     flex-direction: column;
@@ -34,19 +34,23 @@ body {
   .header h1 {
     font-size: 3em;
   }
+  .header-screen {
+    background: linear-gradient(135deg, #61a1f5, #77abf8); /* Blue gradient */
+  }
   
   .header h1 span {
     color: #ffcc00; /* Accent color for your name */
   }
   
   .btn-outline-light {
-    border-color: #ffcc00; /* Yellow accent */
-    color: #ffcc00;
+    border-color: #55e96d; /* Yellow accent */
+    color: #3ff174;
+    box-shadow: 3px 3px 3px rgb(11, 10, 15);
   }
   
   .btn-outline-light:hover {
-    background-color: #ffcc00; /* Highlight on hover */
-    color: white;
+    background-color: #9aff86; /* Highlight on hover */
+    color: rgb(73, 171, 236);
   }
   
   /* Section Styling */

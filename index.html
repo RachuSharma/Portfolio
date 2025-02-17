@@ -6,6 +6,7 @@
   <title>Rachana Sharma - Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
@@ -20,21 +21,29 @@
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><button class="btn btn-light" id="darkModeToggle">🌙</button></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <header class="header text-center">
-    <h1>Hello! I'm <span>Rachana Sharma</span></h1>
-    <p>Software Engineering Student | Full-Stack Developer | UI Enthusiast</p>
-    <a href="#projects" class="btn btn-outline-light">View My Work</a>
+    <div class="header-screen">
+      <h1>Hello! I'm <span>Rachana Sharma</span></h1>
+      <p>Software Engineering Student | Full-Stack Developer | UI Enthusiast</p>
+      <a href="#projects" class="btn btn-outline-light">View My Work</a>
+      <div class="social-icons mt-3">
+        <a href="https://github.com/RachuSharma" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/rachusharma/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="mailto:rachana.sharma9754@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a>
+      </div>
+    </div>
+    <div class="header-screen second-screen"></div>
   </header>
 
   <section id="about" class="container text-center py-5">
     <h2>About Me</h2>
-    <p>I am a passionate software engineering student at VIA University, Denmark, specializing in front-end and back-end development. 
-       I enjoy crafting intuitive user interfaces and working with scalable systems. My experience spans Java, C#, Blazor, PostgreSQL, and more.</p>
+    <p>I am a passionate software engineering student at VIA University, Denmark, specializing in full-stack development. I enjoy crafting intuitive user interfaces and working with scalable systems. My experience spans Java, C#, Blazor, PostgreSQL, and more.</p>
   </section>
 
   <section id="skills" class="skills-section text-center py-5 bg-light">
@@ -42,7 +51,7 @@
       <h2>Skills</h2>
       <div class="row">
         <div class="col-md-4"><h3>Frontend</h3><p>HTML, CSS, JavaScript, Blazor, React, Bootstrap</p></div>
-        <div class="col-md-4"><h3>Backend</h3><p>Java, C#, Python, SQL, PostgreSQL</p></div>
+        <div class="col-md-4"><h3>Backend</h3><p>Java, Python, C#, SQL, PostgreSQL</p></div>
         <div class="col-md-4"><h3>Tools & Methods</h3><p>Git, GitHub, Agile, Scrum, MVVM, OOP</p></div>
       </div>
     </div>
@@ -64,6 +73,23 @@
           <h3>Restaurant Management System</h3>
           <p>A system for table reservations, order tracking, and menu management.</p>
           <p><strong>Technologies:</strong> Java, JavaFX, PostgreSQL</p>
+          <a href="https://github.com/bibek344326-viaSTE/Project_RMS_SEP2" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project">
+          <h3>SEP1 - Bob The Builder</h3>
+          <p>Web and file management system for a construction company.</p>
+          <p><strong>Technologies:</strong> Java, JavaFX, HTML, CSS, JavaScript</p>
+          <a href="https://github.com/Maria0603/SEP1_BosTheBuilder" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>My personal portfolio showcasing my skills, projects, and contact information.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+          <a href="https://github.com/RachuSharma/Portfolio" target="_blank">View on GitHub</a>
         </div>
       </div>
     </div>
@@ -74,7 +100,7 @@
       <h2>Contact Me</h2>
       <p>Email: <a href="mailto:rachana.sharma9754@gmail.com">rachana.sharma9754@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/rachusharma/" target="_blank">Rachana Sharma</a></p>
-      <a href="files/Rachana_CV.pdf" download class="btn btn-light">Download Resume</a>
+      <p><a href="files/Rachana_CV.pdf" download class="btn btn-light">Download Resume</a></p>
     </div>
   </section>
 
