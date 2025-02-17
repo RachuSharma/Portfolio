@@ -1,0 +1,83 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333; /* Dark gray for better readability */
+    background-color: #f8f9fa; /* Light gray for a clean background */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #007bff; /* Bootstrap primary color */
+    font-weight: bold;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+    color: white !important; /* White text for contrast */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important; /* White links for better visibility */
+  }
+  
+  /* Header Styling */
+  .header {
+    height: 100vh;
+    background: linear-gradient(135deg, #0056b3, #007bff); /* Blue gradient */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 3em;
+  }
+  
+  .header h1 span {
+    color: #ffcc00; /* Accent color for your name */
+  }
+  
+  .btn-outline-light {
+    border-color: #ffcc00; /* Yellow accent */
+    color: #ffcc00;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #ffcc00; /* Highlight on hover */
+    color: white;
+  }
+  
+  /* Section Styling */
+  h2 {
+    font-size: 2.5em;
+    color: #007bff; /* Blue for section headers */
+  }
+  
+  .skills-section {
+    background-color: #e9ecef; /* Light gray background */
+  }
+  
+  .project {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff; /* White for project boxes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .contact-section {
+    background-color: #007bff; /* Blue for contact section */
+    color: white; /* White text for contrast */
+  }
+  
+  .contact-section a {
+    color: #ffcc00; /* Yellow for links */
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
