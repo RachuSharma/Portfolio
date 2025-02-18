@@ -1,97 +1,310 @@
-/* General Styling */
-body {
+/* =======================
+   General Styling 
+   ======================= */
+   body {
     font-family: 'Segoe UI', sans-serif;
-    color: #333; /* Dark gray for better readability */
-    background-color: #f8f9fa; /* Light gray for a clean background */
-  }
-  
-  /* Navbar Styling */
-  .navbar {
-    background-color: #007bff; /* Bootstrap primary color */
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* =======================
+   Navbar Styling 
+   ======================= */
+.navbar {
+    background-color: #007bff;
     font-weight: bold;
-  }
-  
-  .navbar-brand {
+}
+
+.navbar-brand {
     font-size: 1.5em;
-    color: white !important; /* White text for contrast */
-  }
-  
-  .navbar-nav .nav-link {
-    color: white !important; /* White links for better visibility */
-  }
-  
-  /* Header Styling */
-  .header {
-    height: 70vh;
-    background: linear-gradient(135deg, #2359ee, #070bf1); /* Blue gradient */
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 254) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(250, 215, 19) !important;
+}
+
+/* =======================
+   Header Styling 
+   ======================= */
+.header {
+    height: 50vh;
+    background: linear-gradient(135deg, #2359ee, #070bf1);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .header h1 {
-    font-size: 3em;
-  }
-  .header-screen {
-    background: linear-gradient(400deg, #2359ee, #070bf1); /* Blue gradient */
-  }
-  
-  .header h1 span {
-    color: #ffcc00; /* Accent color for your name */
-  }
-  
-  .btn-outline-light {
-    border-color: #55e96d; /* Yellow accent */
-    color: #3ff174;
-    box-shadow: 3px 3px 3px rgb(11, 10, 15);
-  }
-  
-  .btn-outline-light:hover {
-    background-color: #8fff80; /* Highlight on hover */
-    color: rgb(73, 171, 236);
-  }
+}
 
-  /* Social Icons */
-  .social-icons a {
-    color: white; /* White icons for better visibility */
+.header h1 {
+    font-size: 3em;
+}
+
+.header h1 span {
+    color: #ffcc00;
+}
+
+.header-screen {
+    background: linear-gradient(400deg, #2359ee, #070bf1);
+}
+
+.header-screen a {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* =======================
+   Button Styling 
+   ======================= */
+.btn-outline-light {
+    border-color: #55e96d;
+    color: #f5c836;
+    box-shadow: 3px 3px 3px rgb(11, 10, 15);
+}
+
+.btn-outline-light:hover {
+    background-color: #f6f7fb;
+    color: rgb(15, 6, 184);
+}
+
+/* =======================
+   Social Icons Styling 
+   ======================= */
+.social-icons a {
+    color: white;
     margin: 0 10px;
     transition: transform 0.3s ease-in-out, color 0.3s;
-  }
-  .social-icons a:hover {
-    color: #41f729;
+}
+
+.social-icons a:hover {
+    color: #f8c128;
     transform: scale(1.2);
-  }
-  /* Section Styling */
-  h2 {
+}
+
+/* =======================
+   Section Styling 
+   ======================= */
+h2 {
     font-size: 2.5em;
-    color: #007bff; /* Blue for section headers */
-  }
-  
-  .skills-section {
-    background-color: #e9ecef; /* Light gray background */
-  }
-  
-  .project {
-    padding: 20px;
-    border-radius: 15px;
-    background-color: #fff; /* White for project boxes */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .contact-section {
-    background-color: #007bff; /* Blue for contact section */
-    color: white; /* White text for contrast */
-  }
-  
-  .contact-section a {
-    color: #ffcc00; /* Yellow for links */
+    color: #073088;
+}
+
+/* =======================
+   About Section 
+   ======================= */
+.about-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* =======================
+   Skills Section (Updated for Spacing)
+   ======================= */
+.skills-section {
+    background-color: #070bf1;
+    padding: 60px 0;
+}
+
+.skills-section h2 {
+    color: white;
+}
+
+/* Skill Box Styling */
+.skill-box {
+    background: rgb(230, 236, 241);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    margin: 15px; /* Added margin to separate boxes */
+}
+
+/* Hover Effect */
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Skill Icons */
+.skill-box i {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Fix Column Spacing */
+.row .col-md-4 {
+    padding: 15px; /* Ensures spacing between columns */
+}
+
+/* =======================
+   Projects Section 
+   ======================= */
+.projects {
+    background-color: #4f6f8f;
+    padding: 60px 0;
+}
+
+/* Project Box */
+.project {
+    background: rgb(230, 236, 241);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    margin: 15px;
+}
+
+/* Hover Effect */
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Fix Column Spacing */
+.row .col-md-6 {
+    padding: 15px;
+}
+
+/* =======================
+   Contact Section 
+   ======================= */
+.contact-section {
+    background-color: #007bff;
+    color: white;
+}
+
+.contact-section a {
+    color: #0704b1;
     text-decoration: none;
-  }
-  
-  .contact-section a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-section h2 {
+    color: white;
+}
+
+/* =======================
+   Dark Mode Styling 
+   ======================= */
+.dark-mode {
+    background-color: #181a79;
+    color: #ffffff;
+}
+
+/* Navbar in Dark Mode */
+.dark-mode .navbar {
+    background-color: #020342;
+}
+
+.dark-mode .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.dark-mode .navbar-nav .nav-link:hover {
+    color: #f1c40f !important;
+}
+
+/* Header in Dark Mode */
+.dark-mode .header {
+    background: linear-gradient(135deg, #0a3ac0, #020342);
+}
+
+.dark-mode .header-screen {
+    background: linear-gradient(400deg, #0a3ac0, #020342);
+}
+
+/* About Section in Dark Mode */
+.dark-mode .about-section {
+    background-color: #031e68;
+    color: #ffffff;
+}
+
+.dark-mode h2 {
+    color: #ffcc00;
+}
+
+/* =======================
+   Dark Mode - Skills Section 
+   ======================= */
+.dark-mode .skills-section {
+    background-color: #083081;
+    color: #ffffff;
+}
+
+.dark-mode .skill-box {
+    background: #0a2463;
+    color: white;
+}
+
+/* =======================
+   Dark Mode - Projects Section
+   ======================= */
+.dark-mode .projects {
+    background-color: #081a68;
+}
+
+.dark-mode .project {
+    background: #040f4e;
+    color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* =======================
+   Dark Mode - Buttons 
+   ======================= */
+.dark-mode .btn-outline-light {
+    border-color: #0f78f1;
+    color: #ffffff;
+}
+
+.dark-mode .btn-outline-light:hover {
+    background-color: #248aff;
+    color: #e9c915;
+}
+
+/* =======================
+   Dark Mode - Contact Section
+   ======================= */
+.dark-mode .contact-section a {
+    color: #ffcc00;
+}
+
+.dark-mode .contact-section a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+}
+.dark-mode .contact-section {
+    background-color: #253a99;
+    color: #ffffff;
+}
+
+/* =======================
+   Image Styling 
+   ======================= */
+.btn-icon {
+    width: 60px;
+    height: 60px;
+}
