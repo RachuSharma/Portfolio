@@ -11,7 +11,7 @@
    Navbar Styling 
    ======================= */
 .navbar {
-    background-color: #007bff;
+    background-color: #0c2de8;
     font-weight: bold;
 }
 
@@ -135,7 +135,7 @@ h2 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-    margin: 15px; /* Added margin to separate boxes */
+    margin: 15px; 
 }
 
 /* Hover Effect */
@@ -152,7 +152,7 @@ h2 {
 
 /* Fix Column Spacing */
 .row .col-md-4 {
-    padding: 15px; /* Ensures spacing between columns */
+    padding: 15px; 
 }
 
 /* =======================
@@ -172,7 +172,19 @@ h2 {
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
     margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    min-height: 200px;
+    max-height: 250px;
+    min-width: 300px;
+    flex: 1;           
+    
 }
+
 
 /* Hover Effect */
 .project:hover {
@@ -183,7 +195,8 @@ h2 {
 /* Fix Column Spacing */
 .row .col-md-6 {
     padding: 15px;
-}
+    display: flex;
+    align-items: stretch;}
 
 /* =======================
    Contact Section 
@@ -194,7 +207,7 @@ h2 {
 }
 
 .contact-section a {
-    color: #0704b1;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -308,3 +321,62 @@ h2 {
     width: 60px;
     height: 60px;
 }
+.btn-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.btn-icon:hover img {
+    transform: scale(1.1);
+}
+
+.navbar-brand span {
+    font-weight: bold;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+    color: white !important;
+  }
+  
+  .navbar-brand::before {
+    content: "✨";
+    margin-right: 8px;
+    animation: shine 2s infinite;
+  }
+  
+  
+  @keyframes shine {
+    0%, 100% { text-shadow: 0 0 5px #e4ce53, 0 0 10px #dcc963; }
+    50% { text-shadow: 0 0 20px #ccc968, 0 0 30px #e2da7e; }
+  }
+  
+  .skill-box {
+    background: rgb(230, 236, 241);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    margin: 15px;
+    min-height: 180px; /* Add this */
+    display: flex;      /* Add this */
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+
+}
+
+.project a {
+    margin: 0 5px;
+    display: inline-block;
+    color: #0056b3;
+    font-weight: 500;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+    color: #003580;
+  }
+  

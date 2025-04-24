@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // JavaScript for Call Button 
-    document.getElementById("showCallButton").addEventListener("click", function(event) {
+    document.getElementById("phoneNumber").addEventListener("click", function(event) {
         event.preventDefault();
-        document.getElementById("callButton").style.display = "inline-block";
+        document.getElementById("callButtonContainer").style.display = "block";
     });
 
