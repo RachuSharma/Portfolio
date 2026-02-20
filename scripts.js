@@ -1,36 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Smooth Scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-              behavior: 'smooth'
-          });
-      });
-  });
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
-  // Dark Mode Toggle
-  const toggleButton = document.getElementById("darkModeToggle");
-  if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark-mode");
-  }
-  toggleButton.addEventListener("click", function () {
-      document.body.classList.toggle("dark-mode");
-      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
-  });
+   // Dark Mode Toggle (dark by default)
+const toggleButton = document.getElementById("darkModeToggle");
 
-  // Typed.js
-  new Typed('#element', {
-      strings: ['Software Engineering Student', 'Full-Stack Developer', 'UI Enthusiast'],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true
-  });
+// default = dark unless user saved light
+if (localStorage.getItem("theme") !== "light") {
+    document.documentElement.classList.add("dark-mode");
+    document.body.classList.add("dark-mode");
+}
+
+toggleButton.addEventListener("click", function () {
+    document.documentElement.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
+
+    if (document.documentElement.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+});
 });
 
-// JavaScript for Call Button 
-    document.getElementById("phoneNumber").addEventListener("click", function(event) {
-        event.preventDefault();
-        document.getElementById("callButtonContainer").style.display = "block";
-    });
+
 

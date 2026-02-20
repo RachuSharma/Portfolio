@@ -1,7 +1,7 @@
 /* =======================
    General Styling 
    ======================= */
-   body {
+body {
     font-family: 'Segoe UI', sans-serif;
     color: #333;
     background-color: #ffffff;
@@ -130,12 +130,16 @@ h2 {
 /* Skill Box Styling */
 .skill-box {
     background: rgb(230, 236, 241);
-    padding: 30px;
+    padding: 28px;
     border-radius: 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-    margin: 15px; 
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* Hover Effect */
@@ -149,10 +153,13 @@ h2 {
     color: #007bff;
     margin-bottom: 15px;
 }
+.skill-box p {
+    margin-bottom: 12px;
+}
 
 /* Fix Column Spacing */
 .row .col-md-4 {
-    padding: 15px; 
+    padding: 15px;
 }
 
 /* =======================
@@ -177,12 +184,7 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
 
-    height: 100%;
-    min-height: 200px;
-    max-height: 250px;
-    min-width: 300px;
-    flex: 1;           
-    
+    width: 100%;
 }
 
 
@@ -196,7 +198,8 @@ h2 {
 .row .col-md-6 {
     padding: 15px;
     display: flex;
-    align-items: stretch;}
+    align-items: stretch;
+}
 
 /* =======================
    Contact Section 
@@ -222,7 +225,7 @@ h2 {
 /* =======================
    Dark Mode Styling 
    ======================= */
-.dark-mode {
+body.dark-mode, html.dark-mod {
     background-color: #181a79;
     color: #ffffff;
 }
@@ -309,6 +312,7 @@ h2 {
     text-decoration: underline;
     color: #f39c12;
 }
+
 .dark-mode .contact-section {
     background-color: #253a99;
     color: #ffffff;
@@ -321,51 +325,44 @@ h2 {
     width: 60px;
     height: 60px;
 }
+
 .btn-icon img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
 }
+
 .btn-icon:hover img {
     transform: scale(1.1);
 }
 
 .navbar-brand span {
     font-weight: bold;
-  }
-  
-  .navbar-brand {
+}
+
+.navbar-brand {
     font-size: 1.5em;
     color: white !important;
-  }
-  
-  .navbar-brand::before {
+}
+
+.navbar-brand::before {
     content: "✨";
     margin-right: 8px;
     animation: shine 2s infinite;
-  }
-  
-  
-  @keyframes shine {
-    0%, 100% { text-shadow: 0 0 5px #e4ce53, 0 0 10px #dcc963; }
-    50% { text-shadow: 0 0 20px #ccc968, 0 0 30px #e2da7e; }
-  }
-  
-  .skill-box {
-    background: rgb(230, 236, 241);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-    margin: 15px;
-    min-height: 180px; /* Add this */
-    display: flex;      /* Add this */
-    flex-direction: column;
-    justify-content: center;
-    height: 180px;
+}
 
+
+@keyframes shine {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px #e4ce53, 0 0 10px #dcc963;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #ccc968, 0 0 30px #e2da7e;
+    }
 }
 
 .project a {
@@ -373,10 +370,19 @@ h2 {
     display: inline-block;
     color: #0056b3;
     font-weight: 500;
-  }
-  
-  .project a:hover {
+}
+
+.project a:hover {
     text-decoration: underline;
     color: #003580;
-  }
-  
+}
+/* Fix Column Spacing */
+#projects .col-md-6,
+#skills .col-md-4 {
+    display: flex;
+}
+
+#projects .project,
+#skills .skill-box {
+    flex: 1;
+}
